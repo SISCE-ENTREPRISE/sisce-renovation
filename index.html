@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>SISCE BÂTIMENT | Revêtement & Peinture</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bleu:#1e3a5f;
+--gris:#2b2f36;
+--noir:#0e1116;
+--blanc:#ffffff;
+--grisclair:#bfc6d1;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+body{background:var(--noir);color:var(--blanc);scroll-behavior:smooth;}
+
+nav{
+position:fixed;top:0;width:100%;
+background:rgba(14,17,22,.95);
+display:flex;justify-content:space-between;align-items:center;
+padding:20px 60px;z-index:1000;
+}
+
+nav a{
+color:var(--blanc);
+text-decoration:none;
+margin-left:30px;
+font-size:0.95rem;
+}
+
+nav a:hover{color:var(--grisclair);}
+
+header{
+height:100vh;
+background:linear-gradient(to right,rgba(14,17,22,.9),rgba(14,17,22,.6)),url("hero.jpg") center/cover;
+display:flex;align-items:center;padding:80px;
+}
+
+header h1{font-size:3.5rem;}
+header span{color:var(--grisclair);}
+header p{margin-top:20px;max-width:650px;color:var(--grisclair);}
+header a{
+display:inline-block;margin-top:40px;
+padding:15px 35px;border-radius:30px;
+background:var(--bleu);color:white;text-decoration:none;
+transition:0.3s;
+}
+
+header a:hover{background:#274c7a;}
+
+section{padding:100px 80px;}
+h2{font-size:2.4rem;margin-bottom:40px;}
+
+.services,.avis,.realisations{
+display:grid;gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+}
+
+.box{
+background:var(--gris);
+padding:35px;border-radius:20px;
+}
+
+.box p{color:var(--grisclair);}
+
+.realisations img{
+width:100%;height:220px;
+object-fit:cover;border-radius:15px;
+}
+
+footer{
+background:#0a0d12;
+padding:50px;text-align:center;
+color:var(--grisclair);
+}
+
+@media(max-width:768px){
+nav{padding:20px;}
+header{padding:40px;}
+section{padding:60px 40px;}
+header h1{font-size:2.5rem;}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<strong>SISCE BÂTIMENT</strong>
+<div>
+<a href="#accueil">Accueil</a>
+<a href="#services">Services</a>
+<a href="#realisations">Réalisations</a>
+<a href="#avis">Avis</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<header id="accueil">
+<div>
+<h1>SISCE <span>BÂTIMENT</span></h1>
+
+<p>
+Bienvenue chez <strong>SISCE BÂTIMENT</strong>, votre entreprise artisanale de confiance pour tous vos travaux de <strong>carrelage</strong>, <strong>revêtement de sol</strong> et <strong>peinture</strong> à Longjumeau et en Île-de-France.
+</p>
+
+<p>
+Fort de plusieurs années d’expérience et d’un savoir-faire transmis de génération en génération, nous réalisons vos projets avec <strong>précision, soin du détail et respect des délais</strong>.
+</p>
+
+<p>
+✔ Devis gratuit • ✔ Assurance décennale & RC Pro • ✔ Travail soigné • ✔ Satisfaction client
+</p>
+
+<a href="#contact">Demander un devis</a>
+</div>
+</header>
+
+<section id="services">
+<h2>Nos services</h2>
+<div class="services">
+<div class="box">
+<h3>Carrelage</h3>
+<p>Sols, murs, terrasses, salles de bains, cuisines, faïence, mosaïque, grès cérame avec finitions impeccables.</p>
+</div>
+<div class="box">
+<h3>Revêtement de sol</h3>
+<p>Parquet stratifié, flottant, massif, lino et moquette. Découpes précises et rendu durable.</p>
+</div>
+<div class="box">
+<h3>Peinture</h3>
+<p>Peinture intérieure et extérieure, murs, plafonds, boiseries et ravalement léger.</p>
+</div>
+</div>
+</section>
+
+<section id="realisations">
+    <h2 style="text-align: center;">Nos Réalisations</h2>
+    
+    <div class="realisations" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 10px;">
+        
+        <img src="blancs.jpg" alt="Carrelage blanc brillant" style="width: 100%; max-width: 350px; height: 250px; object-fit: cover; border-radius: 8px; border: 2px solid #eee;">
+
+        <img src="uns.jpg" alt="Terrasse extérieure" style="width: 100%; max-width: 350px; height: 250px; object-fit: cover; border-radius: 8px; border: 2px solid #eee;">
+        
+        <img src="deuxs.jpg" alt="Salle de bain moderne" style="width: 100%; max-width: 350px; height: 250px; object-fit: cover; border-radius: 8px; border: 2px solid #eee;">
+        
+        <img src="troiss.jpg" alt="Rénovation intérieur" style="width: 100%; max-width: 350px; height: 250px; object-fit: cover; border-radius: 8px; border: 2px solid #eee;">
+        
+    </div>
+</section>
+
+<section id="avis">
+<h2>Avis clients</h2>
+<div class="avis">
+<div class="box"><p>“Bon conseil, merci pour l’attention portée à ma demande.”</p><span>(AlloVoisins)</span></div>
+<div class="box"><p>“Très réactif.”</p><span>(AlloVoisins)</span></div>
+<div class="box"><p>“Prestation de pose de parquet stratifié. Travail très bien fait, attentif aux attentes.”</p><span>(AlloVoisins)</span></div>
+<div class="box"><p>“Entreprise vraiment top, travail professionnel.”</p><span>(AlloVoisins)</span></div>
+<div class="box"><p>“Rénovation de maison complète, résultat superbe et sérieux.”</p><span>(AlloVoisins)</span></div>
+<div class="box"><p>“Très bon travail ! Carrelage impeccable, délais respectés.”</p><span>(AlloVoisins)</span></div>
+<div class="box"><p>“Très content, travail précis, finitions parfaites.”</p><span>(AlloVoisins)</span></div>
+<div class="box"><p>“Entreprise super sérieuse et fiable !”</p><span>(AlloVoisins)</span></div>
+<div class="box"><p>“Pose de carrelage rapide et soignée.”</p><span>(AlloVoisins)</span></div>
+<div class="box"><p>“Travail propre et respectueux des délais.”</p><span>(AlloVoisins)</span></div>
+<div class="box"><p>“Société très professionnelle, je recommande.”</p><span>(AlloVoisins)</span></div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Pour un devis rapide ou toute question, contactez-nous :</p>
+<p>📞 <strong><a href="tel:0767076542" style="color: inherit; text-decoration: none;">07 67 07 65 42</a></strong></p>
+<p>📧 <strong><a href="mailto:Sisceentreprise.pro@gmail.com" style="color: inherit; text-decoration: none;">Sisceentreprise.pro@gmail.com</a></strong></p>
+</section>
+
+
+<section>
+<h2>Informations légales</h2>
+<p><strong>SISCE ENTREPRISE</strong></p>
+<p>SIRET : 989 604 707 00012<br>
+Forme juridique : SAS<br>
+Entreprise créée en juillet 2025</p>
+
+<p><strong>Assurances :</strong><br>
+- Responsabilité Civile Professionnelle<br>
+- Garantie décennale (10 ans)</p>
+
+<p><strong>Diplôme :</strong><br>
+Licence Professionnelle Études et Économie de la Construction (Bac +3) – septembre 2021</p>
+
+<p><strong>Nos engagements :</strong><br>
+Travail soigné et rapide<br>
+Assurance décennale & RC Pro<br>
+Devis gratuit<br>
+Qualité, rapidité, satisfaction client</p>
+
+<p>
+Chez <strong>SISCE ENTREPRISE</strong>, nous mettons à votre service un savoir-faire transmis de génération en génération pour réaliser vos projets avec <strong>passion, précision et exigence</strong>.
+</p>
+</section>
+
+<footer>
+© 2026 – SISCE BÂTIMENT · Longjumeau · Tous droits réservés
+</footer>
+
+</body>
+</html>
